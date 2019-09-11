@@ -1,17 +1,17 @@
 object ProtoParserForm: TProtoParserForm
-  Left = 537
-  Height = 832
-  Top = 16
+  Left = 142
+  Height = 631
+  Top = 52
   Width = 1041
   Caption = 'ProtoParser'
-  ClientHeight = 832
+  ClientHeight = 631
   ClientWidth = 1041
   OnCreate = FormCreate
   SessionProperties = 'CheckBox1.Checked;DirectoryEdit1.Text;FileNameEdit1.Text;ListBox1.Items;RadioButton1.Checked;RadioButton1.Color;RadioButton2.Checked'
-  LCLVersion = '2.1.0.0'
+  LCLVersion = '2.0.0.4'
   inline ResultCode: TSynEdit
     Left = 0
-    Height = 329
+    Height = 128
     Top = 408
     Width = 1041
     Align = alClient
@@ -22,7 +22,7 @@ object ProtoParserForm: TProtoParserForm
     ParentColor = False
     ParentFont = False
     TabOrder = 0
-    Gutter.Width = 57
+    Gutter.Width = 55
     Gutter.MouseActions = <>
     RightGutter.Width = 0
     RightGutter.MouseActions = <>
@@ -476,7 +476,7 @@ object ProtoParserForm: TProtoParserForm
         MouseActions = <>
       end
       object SynGutterLineNumber1: TSynGutterLineNumber
-        Width = 17
+        Width = 15
         MouseActions = <>
         MarkupInfo.Background = clBtnFace
         MarkupInfo.Foreground = clNone
@@ -518,8 +518,8 @@ object ProtoParserForm: TProtoParserForm
     TabOrder = 1
     object TabSheet8: TTabSheet
       Caption = 'From File'
-      ClientHeight = 370
-      ClientWidth = 1031
+      ClientHeight = 375
+      ClientWidth = 1033
       ParentFont = False
       object FileNameEdit1: TFileNameEdit
         AnchorSideLeft.Control = TabSheet8
@@ -527,9 +527,9 @@ object ProtoParserForm: TProtoParserForm
         AnchorSideTop.Side = asrBottom
         AnchorSideRight.Control = BitBtn3
         Left = 6
-        Height = 31
-        Top = 35
-        Width = 926
+        Height = 23
+        Top = 31
+        Width = 924
         FilterIndex = 0
         HideDirectories = False
         ButtonWidth = 23
@@ -548,9 +548,9 @@ object ProtoParserForm: TProtoParserForm
         AnchorSideBottom.Control = TabSheet8
         AnchorSideBottom.Side = asrBottom
         Left = 12
-        Height = 263
-        Top = 101
-        Width = 920
+        Height = 284
+        Top = 85
+        Width = 918
         BorderSpacing.Around = 6
         Anchors = [akTop, akLeft, akRight, akBottom]
         Font.Height = 13
@@ -560,7 +560,7 @@ object ProtoParserForm: TProtoParserForm
         ParentColor = False
         ParentFont = False
         TabOrder = 1
-        Gutter.Width = 57
+        Gutter.Width = 55
         Gutter.MouseActions = <>
         RightGutter.Width = 0
         RightGutter.MouseActions = <>
@@ -1014,7 +1014,7 @@ object ProtoParserForm: TProtoParserForm
             MouseActions = <>
           end
           object SynGutterLineNumber1: TSynGutterLineNumber
-            Width = 17
+            Width = 15
             MouseActions = <>
             MarkupInfo.Background = clBtnFace
             MarkupInfo.Foreground = clNone
@@ -1048,9 +1048,9 @@ object ProtoParserForm: TProtoParserForm
         AnchorSideLeft.Control = TabSheet8
         AnchorSideTop.Control = TabSheet8
         Left = 6
-        Height = 23
+        Height = 19
         Top = 6
-        Width = 86
+        Width = 67
         BorderSpacing.Around = 6
         Caption = 'From file'
         Checked = True
@@ -1063,9 +1063,9 @@ object ProtoParserForm: TProtoParserForm
         AnchorSideTop.Control = FileNameEdit1
         AnchorSideTop.Side = asrBottom
         Left = 6
-        Height = 23
-        Top = 72
-        Width = 143
+        Height = 19
+        Top = 60
+        Width = 114
         BorderSpacing.Around = 6
         Caption = 'Enter source code'
         OnChange = RadioButton1Change
@@ -1075,10 +1075,10 @@ object ProtoParserForm: TProtoParserForm
         AnchorSideTop.Control = TabSheet8
         AnchorSideRight.Control = TabSheet8
         AnchorSideRight.Side = asrBottom
-        Left = 938
-        Height = 31
+        Left = 936
+        Height = 26
         Top = 6
-        Width = 87
+        Width = 91
         Action = actCompile
         Anchors = [akTop, akRight]
         AutoSize = True
@@ -1115,7 +1115,6 @@ object ProtoParserForm: TProtoParserForm
         ItemHeight = 0
         ScrollWidth = 926
         TabOrder = 0
-        TopIndex = -1
       end
       object BitBtn1: TBitBtn
         AnchorSideLeft.Control = BitBtn2
@@ -1205,7 +1204,7 @@ object ProtoParserForm: TProtoParserForm
   object Memo1: TMemo
     Left = 0
     Height = 90
-    Top = 742
+    Top = 541
     Width = 1041
     Align = alBottom
     ParentFont = False
@@ -1215,7 +1214,7 @@ object ProtoParserForm: TProtoParserForm
     Cursor = crVSplit
     Left = 0
     Height = 5
-    Top = 737
+    Top = 536
     Width = 1041
     Align = alBottom
     ResizeAnchor = akBottom

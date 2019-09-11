@@ -131,7 +131,7 @@ begin
   begin
     if not FileExists(FCopyrightInfoFile) then
       raise Exception.CreateFmt('Not found copyright info file name - %s', [FCopyrightInfoFile]);
-    FResultCode.Add(FileToString(FCopyrightInfoFile));
+    FResultCode.Add(FCopyrightInfoFile);
   end;
 
   FResultCode.Add('unit ' + FPasUnitName+';');
