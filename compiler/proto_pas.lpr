@@ -168,7 +168,7 @@ procedure TProtoToPasApplication.SaveResultFile(AFileName, AText: string);
 var
   F: TFileStream;
 begin
-  //AFileName:=ChangeFileExt(AFileName, '.pas');
+  AFileName:=ChangeFileExt(AFileName, '.pas');
   if FOutDir <> '' then
   begin
     ForceDirectory(FOutDir);
@@ -197,10 +197,12 @@ end;
 procedure TProtoToPasApplication.WriteHelp;
 begin
   { add your help code here }
-  writeln('Usage: ', ExeName, ' -h -o -i --help --out --include <proto_file.proto>');
+  writeln('Basic Usage: ', ExeName, ' -o <output dir> -i --include <proto_file.proto>');
   writeln('Main options:');
   writeln('-o, --out'#9'out folder');
-  writeln('-i, --include'#9'include files folder');
+  writeln('-i, '#9'include files folder');
+  writeln('--include'#9'file to compile'); {this is true ?}
+
   writeln('Codegeneration options:');
   writeln('-c, --copyrightinfo'#9'copyright info for file header');
   writeln('Other options:');

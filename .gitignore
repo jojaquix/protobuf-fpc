@@ -1,0 +1,10 @@
+backup/*
+*/backup/*
+*/lib/*
+*.exe
+*.o
+*.ppu
+*.po
+*.lps
+*.compiled
+*.rsj
